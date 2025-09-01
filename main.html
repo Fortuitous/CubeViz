@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="format-detection" content="telephone=no">
+		<title>Cube Context</title>
+        
+        <link rel="stylesheet" type="text/css" href="js/JQ/jquery.mobile.icons-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/JQ/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/JQ/jquery.mobile.theme-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/JQ/jquery.mobile-1.4.5.min.css" />
+        
+        <link rel="stylesheet" type="text/css" href="css/flashback-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.simultaneous-transitions-replace.css" />
+<!--         <link rel="stylesheet" type="text/css" href="css/chardinjs.css" /> -->
+
+        <link rel="stylesheet" href="css/jquery.mobile.iscrollview.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="css/flashback.css" type="text/css" />
+		
+        <script type="text/javascript" src="js/JQ/jquery-2.1.4.min.js"></script> 
+
+        <script type="text/javascript" src="js/jquery.mobile.simultaneous-transitions-replace.js"></script>
+
+        <script type="text/javascript">
+        $(document).bind('mobileinit',function(){
+            $.mobile.changePage.defaults.changeHash = false;
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+        });
+        </script>
+
+		<script type="text/javascript" src="js/JQ/jquery.mobile-1.4.5.min.js"></script>
+        
+        <script type="text/javascript" src="js/JQ/jquery.csv-0.62.js"></script>
+        
+        <!--<script type="text/javascript" src="js/bgLog/kinetic-v5.1.0.min.js"></script>-->
+        <!--<script type="text/javascript" src="js/bgLog/sprintf-0.7-beta1.js"></script>-->
+        <script type="text/javascript" src="js/bgLog/JBbglogThemes.js"></script>
+        
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.iscrollview.js"></script>
+        <script type="text/javascript" src="cordova.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="js/spin.min.js"></script>
+        <script type="text/javascript" src="js/jquery.spin.js"></script>
+        <script type='application/javascript' src='js/fastclick.min.js'></script>        
+<!--        <script type="text/javascript" src="js/chardinjs.min.js"></script> -->       
+        
+        <script type="text/javascript" src="js/Flashcard/flashcheck.js"></script>  
+<!--    <script type="text/javascript" src="js/Flashcard/flashcheck.021.min.js"></script>  -->        
+
+        <script type="text/javascript" src="js/Flashcard/Deck.js"></script>
+        <script type="text/javascript" src="js/Flashcard/DeckSet.js"></script>
+        <script type="text/javascript" src="js/Flashcard/CardInDeck.js"></script>
+        <script type="text/javascript" src="js/Flashcard/Card.js"></script>
+        <script type="text/javascript" src="js/Flashcard/CubeCard.js"></script>
+        <script type="text/javascript" src="js/Flashcard/PlayCard.js"></script>
+        <script type="text/javascript" src="js/Flashcard/ConceptCard.js"></script>
+        <script type="text/javascript" src="js/Flashcard/CubePosition.js"></script>
+        <script type="text/javascript" src="js/Flashcard/PlayPosition.js"></script>
+        <script type="text/javascript" src="js/Flashcard/Play.js"></script>
+        <script type="text/javascript" src="js/Flashcard/OutcomeDistribution.js"></script>
+        <script type="text/javascript" src="js/Flashcard/RuleCard.js"></script>
+        <script type="text/javascript" src="js/Flashcard/CubeContext.js"></script>        
+<!--    <script type="text/javascript" src="js/Flashcard/fbdata.min.js"></script>  -->
+        
+        <script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
+        <!--<script type="text/javascript" src="js/greensock/KineticPlugin.min.js"></script>-->
+        <script type="text/javascript" src="js/greensock/CSSPlugin.min.js"></script>
+    	<script type="text/javascript" src="js/greensock/AttrPlugin.min.js"></script>
+   	</head>
+    <body>
+    
+
+<!-- External Toolbars -->
+<!-- <div id='favButton' class='ui-btn ui-icon-plus ui-btn-icon-notext ui-corner-all'> -->
+
+    <div data-role="header" data-position="fixed" data-theme="a">
+<!--         <div class="headleft"> -->
+            <div align="left" style="padding-left:5px">
+                <a href="#" id="otherHeaderButton" data-role="button" style="margin-left:5px"class="ui-btn-left ui-disabled ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-corner-all ui-icon-back"></a>
+            </div>
+
+                <h1>
+                    <span class="headleft">Select Deck</span><span class="headright">Welcome!</span>
+                </h1>
+
+            <div align="right" style="padding-right:5px">
+                <a href="#navPanel" id="navHeaderButton" style="margin-right:5px" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-corner-all ui-icon-bars"></a>
+            </div>
+<!--         </div> -->
+
+        <div class="whitebar"></div>
+        <div class="redbar"></div>
+        <div class="whitebar"></div>            
+    </div>
+
+    <div data-role="footer" data-tap-toggle="false" data-position="fixed" data-theme="a" id="footers">
+<!--         <div id="deckNavbar" data-role="navbar" data-intro="<em>Then, tap Start.</em>" data-position="top"> -->
+        <div id="deckNavbar" data-role="navbar">            
+            <ul>
+<!--                 <li><a href="javascript:void(0)" data-transition="none" id="beginBtn" class="ui-btn navFootBtn" style='font-size:150%'>Start</a></li> -->
+                <li><a data-transition="none" id="beginBtn" class="ui-btn navFootBtn" style='font-size:150%'>Start</a></li>
+            </ul>
+        </div><!-- /navbar -->
+        <div id="statsNavbar" data-role="navbar">
+            <ul>
+                <li><a href="javascript:void(0)" data-transition="none" id="browseStart" class="ui-btn navFootBtn" style='font-size:150%'>Browse</a></li>
+                <li><a href="javascript:void(0)" data-transition="none" id="trainStart" class="ui-btn navFootBtn" style='font-size:150%'>Train</a></li>
+            </ul>
+        </div><!-- /navbar -->        
+        <div id="statsCompareNavbar" data-role="navbar">
+            <ul>
+                <li><a href="#deckselect" data-transition="pop" data-direction="reverse" class="ui-btn navFootBtn" style='font-size:150%'>Home</a></li>
+                <li><a href="#flashcards" data-transition="pop" class="ui-btn navFootBtn" style='font-size:150%'>Resume</a></li>
+            </ul>
+        </div><!-- /navbar -->                
+<!--        <div hidden id="settingsNavbar" data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a href="javascript:void(0)" data-rel="back" id="cancelSettings" class="ui-btn ui-icon-delete ui-btn-icon-bottom">Cancel</a></li>
+                <li><a href="javascript:void(0)" id="submitSettings" class="ui-btn ui-icon-check ui-btn-icon-bottom">Apply</a></li>
+            </ul>
+        </div>--><!-- /navbar -->
+        <div id="cardNavbar" data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a href="javascript:void(0)" data-transition="none" id="hard" class="ui-btn navFootBtn" style='font-size:150%'>Hard</a></li>
+                <li><a href="javascript:void(0)" data-transition="none" id="unsure" class="ui-btn navFootBtn" style='font-size:150%'>So-So</a></li>
+                <li><a href="javascript:void(0)" data-transition="none" id="easy" class="ui-btn navFootBtn" style='font-size:150%'>Easy</a></li>
+            </ul>
+        </div>
+        <div id="browseNavbar" data-role="navbar">
+            <ul>
+                <li><a data-transition="none" id="prevBtn" class="ui-btn navFootBtn" style='font-size:150%'><span id="myprev">Previous (Home)</span></a></li>
+                <li><a data-transition="none" id="nextBtn" class="ui-btn navFootBtn" style='font-size:150%'><span id="mynext">Next</span></a></li>
+            </ul>
+        </div><!-- /navbar -->        
+    </div><!-- /footer -->
+
+    <div data-role="panel" id="navPanel" data-position="right" data-display="overlay">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close Menu</a></li>
+            <li data-role="list-divider"></li>            
+            <li><a href="#" id="infoHeaderButton">Help</a></li>
+            <li><a href="#settings" id="settingsHeaderButton" >Settings</a></li>
+<!--             <li><a href="#" class="buyButton" id="storeHeaderButton">Store</a></li> -->
+            <li><a href="#About" id="aboutHeaderButton">About</a></li>
+<!--             <li data-role="list-divider"></li>
+            <li><a href="#deckselect">Select Deck</a></li> -->
+<!--             <li><a href="#stats">Stats</a></li> -->
+        </ul> 
+    </div><!-- /panel -->
+
+
+
+
+<!-- Dynamic Pages -->
+
+        <div data-role="page" id="deckselect" data-title="Select Deck" data-theme="a">
+            <div class="leftpane">
+
+<!--                 <div class="whitebar"></div>
+                <div class="redbar"></div>
+                <div class="whitebar"></div>
+ -->
+                <div class="DSContent"></div>
+
+                <div class="ui-content willScroll">
+                    <fieldset class="ui-grid-a">
+                        <div class="button-wrap">
+                            <p>                        
+                                <button id="clearDecks" class="ui-btn ui-btn-mini ui-corner-all ui-btn-inline">Clear Selected Decks (<span id='numDeckSpan'>0</span>)</button>
+        <!--                         <button style="float:right; padding-top: 5px;" id="globalinfo" class='ui-btn ui-btn-mini ui-btn-inline ui-icon-info ui-btn-icon-notext ui-corner-all'></button> -->
+                            </p>
+                        </div>
+                    </fieldset>
+        <!--             <form id="selectDeckForm" data-intro="<em>Welcome! &nbsp First, select one or more decks.</em>" data-position="top">    -->
+                    <form id="selectDeckForm">   
+
+
+                        <div data-role="popup" id="NoneSelectedPopup" data-overlay-theme="b" data-theme="a" data-dismissible="false" style="max-width:400px;">
+                            <div role="main" class="centeredtext">
+                                <h3>Welcome!<br>You must make a selection to begin.</h3>
+                                <p>Expand at least one deck set, and select at least one deck.  Then tap <em>Start</em>.<br><br>You can always get detailed information specific to the page you're on (including this one!) by tapping <button href="#" id="sampleInfo" style="top: -3px; padding:0; margin:0;" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-corner-all ui-icon-bars"></button> in the header, and selecting <strong>Help</strong>.</p>
+                                <div data-role="controlgroup">
+                                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-a" data-rel="back"  data-transition="flow">Ok</a>
+                                </div>	
+                            </div>
+                        </div>
+                        <div data-role="popup" id="AllBrowsedPopup">
+                            <p>You have browsed all the selected cards!</p>  
+                        </div>
+                    </form>
+        <!--             <br> -->
+        <!--             <fieldset class="ui-grid-a">
+                        <p style='text-align:center'>Number of selected decks: <span id='numDeckSpan'>0</span></p> 
+                        <div class="ui-block-a"><div class="button-wrap"><a href="#Help" data-transition="pop" id="refresh" class="ui-btn ui-corner-all">Refresh</a></div></div>
+                        <div class="ui-block-b"><div class="button-wrap"><a href="javascript:void(0)" data-transition="pop" id="clearDecks" class="ui-btn ui-corner-all">Clear</a></div></div>
+                    </fieldset> -->
+
+        <!--             <div class="button-wrap">
+                        <p style='text-align:left'><button id="clearDecks" class="ui-btn ui-btn-mini ui-corner-all ui-btn-inline">Clear Selected Decks (<span id='numDeckSpan'>0</span>)</button></p>
+                    </div> -->
+
+                    <br><br>
+                </div><!-- /content -->
+            </div><!-- /leftpane -->
+            <div class="rightpane">
+                <div class="AboutContent">
+                    <div id="introdiv" style="padding:6px 50px">
+                        <h2><span style="color:limegreen"><i>Cubes in Context:</i></span><br>
+                        <span style="color:red">Backgammon match data, aggregated and visualized.</span></h2><br>  
+                        <p>This site explores the effect of match-score on cube decisions by presenting cube-action data for <i>all</i> scores in 13-point match, all at once.  Instead of peeking at a data point here and there (Hey XG, what about this score?  What about that score?), see the pattern as a whole.  Insights abound.</p>
+<!--                         <p>The left panel shows the position and the money cube action; the right panel shows data for that same position at all scores and cube levels.</p><br>
+                        <img src="images/Intro1.jpg" style="border:1px solid white; border-radius: 10px; float:right; margin: 15px 0px 25px 35px;">    
+                        <p><span style="color:limegreen">Green</span> (positive) values mean Double or Take.<br><span style="color:Red">Red</span> (negative) values mean No Double or Pass.</p>
+                        <p>In the example at right, for a given position in the first game of a 13-point match, a correct initial double yields a small pass (a .010 error if taken).  For that same position a correct recube to 4 would be a correct take, whereas a recube to 8 would be a blunder (.209 error) and massive Take.</p>
+                        <p>All data are from XG2.1, XG Roller ++.</p><br>
+                        <img src="images/Intro2.jpg" style="border:1px solid white; border-radius: 10px; float:right; margin: 15px 0px 25px 35px;">
+                        <p>Sort the data by Doubler's Score or by Taker's Score.  Filter the data by desired Match Length.<br>More detailed info in Help.  Be sure to walk through the examples in the Early Observations section.</p><br>  --> 
+                        <p>Let's go!  Select a position category (deck) at left and click Start.</p>   
+                    </div>
+                </div>
+            </div>
+        </div><!-- page -->
+
+
+
+
+    <div data-role="page" id="settings" data-title="Settings" data-theme="a">
+
+
+            <br>
+            <div class="ui-content willScroll">
+                    <fieldset data-role="collapsible" data-corners="false" class="help">
+                        <legend>FlashBack Theme</legend>
+                        <fieldset data-role="controlgroup" data-corners="false">
+                            <label>
+                                <input type="radio" name="fbUITheme" id="fbThemeDay" value= "true">Day
+                            </label>
+                            <label>
+                                <input type="radio" name="fbUITheme" id="fbThemeNight" value= "false">Night
+                            </label>
+                        </fieldset>
+                    </fieldset>
+         
+                    <fieldset data-role="collapsible" data-corners="false" class="help">
+                        <legend>Board Theme</legend>
+                        <fieldset data-role="controlgroup" data-corners="false">
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme1" id="fbTheme1"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Christmas.png">Christmas
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme2" id="fbTheme2"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Butter.png">Butterscotch
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme3" id="fbTheme3"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/RedWhite.png">Business
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme4" id="fbTheme4"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Earth.png">Earth
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme5" id="fbTheme5"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Sand.png">Sand
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme6" id="fbTheme6"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Vineyard.png">Vineyard
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme7" id="fbTheme7"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Lorax.png">Lorax
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme8" id="fbTheme8"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Attache.png">Attache
+                            </label>
+                            <label>
+                                <input type="radio" name="fbTheme" value="theme9" id="fbTheme9"><img align="absmiddle" alt='image' style='width:30%; max-width:126px' src="inappimages/ThemeThumbs/Sunset.png">Sunset
+                            </label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset data-role="collapsible" data-corners="false" class="animationUI help">
+                        <legend>Animation</legend>
+                        <fieldset data-role="controlgroup" data-corners="false">
+                            <div style='text-align:left'><strong>Higher = Faster</strong></div>
+                            <label for="fbAnimation">Speed (Why not shown?)</label>
+                            <div id="animation"><input type="range" name="fbAnimation" id="fbAnimation" data-highlight="true" min="0" max="100" value="50"></div>
+                        </fieldset>
+
+                    </fieldset>
+
+                    <fieldset data-role="collapsible" data-corners="false" class="help">
+                        <legend>Direction</legend>
+                        <fieldset data-role="controlgroup" data-corners="false">
+                            <label>
+                                <input type="radio" name="fbDirection" id="fbDirectionLeft" value= "true">Bearoff Left
+                            </label>
+                            <label>
+                                <input type="radio" name="fbDirection" id="fbDirectionRight" value= "false">Bearoff Right
+                            </label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset data-role="collapsible" data-corners="false" class="help">
+                        <legend>Options</legend>
+                        <fieldset data-role="controlgroup" data-corners="false">
+                            <label>
+                                <input type="checkbox" name="fbShowDice" id="fbShowDice">Show dice
+                            </label>
+                            <label>
+                                <input type="checkbox" name="fbShowPipcount" id="fbShowPipcount">Show pip count
+                            </label>
+                            <label>
+                                <input type="checkbox" name="fbShowPointNumbers" id="fbShowPointNumbers">Show point numbers
+                            </label>
+                            <label>
+                                <input type="checkbox" name="fbShowTakiPoints" id="fbShowTakiPoints">Show Taki (rounded) points
+                            </label>
+                            <label>
+                                <input type="checkbox" name="fbShowDeckName" id="fbShowDeckName">Show deck name above position
+                            </label>
+                        </fieldset>
+    <!--                     <fieldset data-role="controlgroup" data-corners="false" >
+                            <input type="checkbox" name="fbShowInitialHelp" id="fbShowInitialHelp" />
+                            <label for="fbShowInitialHelp">Restore initial help screens</label>
+                        </fieldset> -->
+    	            </fieldset>
+                    <!--<p style='text-align:center'>Adjust settings, then <strong>Apply</strong></p>-->
+    				<br><br>
+                <!--</form>-->
+            </div><!-- /content -->
+        </div><!-- page -->
+
+
+
+
+
+        <div data-role="page" id="flashcards" data-title="Cube Context" data-theme="a">
+            <div class="leftpane">
+                <div class="ui-content">
+
+                    <div id="bglogContainer" class="iscroll-fixed"></div>
+                    <div id="belowAnswerContainer">
+
+                        <table id="SwapCopy" class='tr4 tr3'>
+                            <tr>
+                                <td width="30%" style="vertical-align: bottom"><button id="swapButton" data-transition="slide" data-mini="true" class="ui-btn ui-btn-icon-left ui-icon-forward ui-btn-inline ui-corner-all">Doubler's Perspective</button></td>
+                                <td width="30%" style='text-align:right'><div id='clipMessage'>Copied to Clipboard</div></td>
+                                <td width="30%" style="vertical-align: bottom"><button id="copyXGButton" data-transition="slide" data-mini="true" class="ui-btn ui-btn-icon-right ui-icon-action ui-btn-inline ui-corner-all">Copy XGID</button></td>
+                            </tr>
+                        </table>
+
+                    </div> <!-- below -->             
+                    <div id="outerAnswerContainer" class="answerContainer AboutContent"></div> <!-- outer -->
+
+                    <div id="bottom" style="position:fixed; bottom:0; width: 100%; height: 60px" >&nbsp                
+                    </div>
+
+                </div> <!--content -->
+            </div> <!--leftpane -->
+
+
+            <div class="rightpane">
+                <div class="AboutContent leftpanein">
+                </div> <!--about content leftpane -->
+
+                <div class="AboutContent rightpanein">
+
+
+<!--                     <form class='rightalign'>
+                        <div class="tooltip">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+
+                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5e" value="Show" checked = "checked">
+                            <label for="radio-choice-h-5e">Show</label>      
+                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5f" value="Hide">
+                            <label for="radio-choice-h-5f">Hide</label>                           
+
+                        </fieldset>
+                        </div>
+                    </form> -->
+
+<!-- 
+                    <form class='rightalign2'>
+                        <div class="tooltip">                            	
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2e" value="13" checked = "checked">
+                            <label for="radio-choice-h-2e">13</label>      
+                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2f" value="25">
+                            <label for="radio-choice-h-2f">25</label>                           
+                        </fieldset>
+                        </div>
+                    </form>
+ -->
+
+ <!--                    <form class='rightalign3' >
+                        <div class="tooltip" id='doubleTo'>                                
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            
+                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4a" value="0" checked="checked">
+                            <label for="radio-choice-h-4a">2</label>
+                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4b" value="1">
+                            <label for="radio-choice-h-4b">4</label>
+                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4c" value="2">
+                            <label for="radio-choice-h-4c">8</label>
+                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4d" value="3">
+                            <label for="radio-choice-h-4d">16</label>                            
+                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4e" value="4">
+                            <label for="radio-choice-h-4e">32</label>                         
+                        </fieldset>
+                        </div>
+                                                
+                    </form> -->
+
+                </div> <!--about content rightpane -->
+
+
+                <div class="AboutContent bottompanein">
+ 
+                   <div class="doublerNeedsLegend">
+                        <b>Doubler Needs</b>
+                    </div>
+                    
+                    <div class="takerNeedsLegend">
+                        <b>Taker Needs</b>
+                    </div>
+
+
+<!-- 
+                    <div class="doubleToLegend">
+                        <b>Double To:</b>
+                    </div>
+
+					<div class="doubleToWidget">
+	                    <form>	                    	
+		                        <fieldset data-role="controlgroup" data-type="horizontal">
+		                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4a" value="0" checked="checked">
+		                            <label for="radio-choice-h-4a">2</label>
+		                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4b" value="1">
+		                            <label for="radio-choice-h-4b">4</label>
+		                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4c" value="2">
+		                            <label for="radio-choice-h-4c">8</label>
+		                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4d" value="3">
+		                            <label for="radio-choice-h-4d">16</label>                            
+		                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4e" value="4">
+		                            <label for="radio-choice-h-4e">32</label>                         
+		                        </fieldset>
+	                    </form>
+					</div>                     
+
+                    <div class="matchLengthLegend">
+                        <b>Match Length:</b>
+                    </div>                        
+
+
+                    <div class="matchLengthWidget">
+	                   <form>
+	                        <div>                            	
+	                        <fieldset data-role="controlgroup" data-type="horizontal">
+	                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2e" value="13" checked = "checked">
+	                            <label for="radio-choice-h-2e">13</label>      
+	                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2f" value="25">
+	                            <label for="radio-choice-h-2f">25</label>                           
+	                        </fieldset>
+	                        </div>
+	                    </form>
+	                </div>
+
+
+
+                    <div class="dataLegend">
+                        <b>Data:</b>
+                    </div>                        
+
+                    <div class="dataWidget">
+                        <form>
+	                        <div>
+	                        <fieldset data-role="controlgroup" data-type="horizontal">
+
+	                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5e" value="Show" checked = "checked">
+	                            <label for="radio-choice-h-5e">Show</label>      
+	                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5f" value="Hide">
+	                            <label for="radio-choice-h-5f">Hide</label>                           
+
+	                        </fieldset>
+	                        </div>
+                    	</form>
+
+                    </div>                        
+ -->
+                    <div class="controls">
+
+						<div class="dataTypeLegend2">
+	                        <b>Data Type:</b>
+	                    </div>
+
+						<div class="dataTypeWidget2">
+		                    <form>	                    	
+			                        <fieldset data-role="controlgroup" data-type="horizontal">
+			                            <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="Double" checked="checked">
+			                            <label for="radio-choice-h-6a">Double</label>
+			                            <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="Take">
+			                            <label for="radio-choice-h-6b">Take</label>
+			                            <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6c" value="Actions">
+			                            <label for="radio-choice-h-6c">Actions</label>
+			                         </fieldset>
+		                    </form>
+						</div>                     
+
+	                   	<div class="doubleToLegend2">
+	                        <b>Double To:</b>
+	                    </div>
+
+						<div class="doubleToWidget2">
+		                    <form>	                    	
+			                        <fieldset data-role="controlgroup" data-type="horizontal">
+			                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4a" value="0" checked="checked">
+			                            <label for="radio-choice-h-4a">2</label>
+			                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4b" value="1">
+			                            <label for="radio-choice-h-4b">4</label>
+			                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4c" value="2">
+			                            <label for="radio-choice-h-4c">8</label>
+			                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4d" value="3">
+			                            <label for="radio-choice-h-4d">16</label>                            
+			                            <input type="radio" name="radio-choice-h-4" id="radio-choice-h-4e" value="4">
+			                            <label for="radio-choice-h-4e">32</label>                         
+			                        </fieldset>
+		                    </form>
+						</div>                     
+
+	                    <div class="matchLengthLegend2">
+	                        <b>Match Length:</b>
+	                    </div>                        
+
+
+	                    <div class="matchLengthWidget2">
+		                   <form>
+		                        <div>                            	
+		                        <fieldset data-role="controlgroup" data-type="horizontal">
+		                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2e" value="13" checked = "checked">
+		                            <label for="radio-choice-h-2e">13</label>      
+		                            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2f" value="25">
+		                            <label for="radio-choice-h-2f">25</label>                           
+		                        </fieldset>
+		                        </div>
+		                    </form>
+		                </div>
+
+
+
+	                    <div class="dataLegend2">
+	                        <b>Data:</b>
+	                    </div>                        
+
+	                    <div class="dataWidget2">
+	                        <form>
+		                        <div>
+		                        <fieldset data-role="controlgroup" data-type="horizontal">
+
+		                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5e" value="Show" checked = "checked">
+		                            <label for="radio-choice-h-5e">Show</label>      
+		                            <input type="radio" name="radio-choice-h-5" id="radio-choice-h-5f" value="Hide">
+		                            <label for="radio-choice-h-5f">Hide</label>                           
+
+		                        </fieldset>
+		                        </div>
+	                    	</form>
+
+	                    </div>                        
+                    </div>
+
+                    <div class="AboutContent">
+                        <table id="cubecontext">
+                        </table>
+                    </div>
+
+                    <div class="legend AboutContent">
+                        <table id="legendtable">
+                        </table>
+                    </div>
+                </div> <!--about content bottompane -->
+
+
+            </div> <!--rightpane -->
+
+        </div><!-- flashcard -->
+
+
+
+
+
+    <!-- Static Pages -->
+
+        <div data-role="page" id="About" data-title="About" data-theme="a">
+<!--             <div class="whitebar"></div>
+            <div class="redbar"></div>
+            <div class="whitebar"></div>
+ -->            
+            <div class="willScroll AboutContent">            
+            
+                <h1 style="font-family:Tahoma; font-size: 40px;"><em>Cubes in Context</em></h1>
+                <h2 style="font-family:'Book Antiqua', Palatino, serif;">The Fortuitous Press</h2>
+                <h3>v 1.0</h3>
+                <br>
+                <table>
+                    <tr><td width='150'>Programming</td><td>Jeremy Bagai</td></tr>
+                    <tr><td></td><td>Simon Woodhead</td></tr>
+                    <tr><td> </td></tr>
+                    <tr><td>Graphics Engine</td><td><a href="#" onclick="window.open('http://bglog.org/main.html', '_system', 'location=no');">bgLog</a></td></tr>
+                    <tr><td> </td></tr>
+                    <tr><td>Framework</td><td><a href="#" onclick="window.open('http://jquerymobile.com/', '_system', 'location=no');">jQuery Mobile</a></td></tr>
+                    <tr><td></td><td><a href="#" onclick="window.open('http://phonegap.com/', '_system', 'location=no');">PhoneGap</a></td></tr>
+                    <tr><td> </td></tr>
+                    <tr><td>Rollout Data</td><td><a href="#" onclick="window.open('http://www.extremegammon.com/', '_system', 'location=no');">eXtreme Gammon</a></td></tr>
+                    <tr><td> </td></tr>
+                    <tr><td>Special Thanks</td><td>David Levy</td></tr>
+                    <tr><td></td><td>Joel Parker Henderson</td></tr>
+                    <tr><td>&nbsp;&nbsp;</tr>
+                    <tr><td colspan = '2' style='text-align:center'>Questions?  Comments?</td></tr>
+                    <tr><td colspan = '2' style='text-align:center'>Try our <a href="#" onclick="window.open('http://www.fortuitouspress.com/forum', '_system', 'location=no');">forums</a> or send an <a href="mailto:flashback@fortuitouspress.com" target="_top">email</a>.</td></tr>
+                </table>
+            </div><!-- /content -->
+        </div><!-- page -->
+
+
+        <div data-role="page" id="Help" data-title="Help" data-theme="a">
+<!--             <div class="whitebar"></div>
+            <div class="redbar"></div>
+            <div class="whitebar"></div>
+ -->            <br>
+
+            <div class="ui-content willScroll AboutContent">
+    <!--             <p class="centeredtext"><strong>Introduction and goals</strong></p> -->
+                <div data-role="collapsible-set" data-corners="false" class="help">
+    <!--                 <div style="text-align:center"><strong>Introduction and goals</strong><br><br></div> -->
+                    <fieldset data-role="collapsible">
+                        <legend>Why Cubes In Context?</legend>
+                        <p>Backgammon cube action is hard, and match-play cube action is harder. At different scores the same position can swing, drunkenly, from No-Double-Take through Double-Pass on its way to Too Good to Double.  How is a player to navigate?</p>
+                        <p>Historically, there have been two primary methods:
+                            <ol>
+                                <li>Do the math
+                                    <ol>
+                                        <li>Memorize a Match Equity Table</li>
+                                        <li>Account for gammons</li>
+                                        <li>Account for recube equity</li>
+                                        <li>Calculate Take Point</li>
+                                        <li>This method is best explicated in Kit Woolsey's "How To Play Tournament Backgammon"</li>
+                                        <br>
+                                    </ol>
+                                </li>
+                                <li>Memorize dynamics of specific scores
+                                    <ol>
+                                        <li>Treat each score as an atomic entity:
+                                            <ul>
+                                                <li>Here's what I know about -2-3</li>
+                                                <li>Here's what I know about -2-4</li>
+                                                <li>Etc.</li>
+                                            </ul>
+                                        </li>
+                                        <li>For each score, understand:
+                                            <ul>
+                                                <li>Doubling Window</li>
+                                                <li>Gammon Price</li>
+                                                <li>Recube Strategy</li>
+                                            </ul>
+                                        </li>
+                                        <li>This method is best explicated in Kit Woolsey's "Five Point Match"</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        There are pros and cons to each method.  Doing the math requires memorizing a match equity table, retrieving the appropriate values over the board, then performing mental long division as needed.  This is a high barrier to entry for many players.  Additionally, the result of the process is not necessarily the value you're looking for -- the initial result assumes no gammons or recubes.  Adjusting for gammons adds another level but is straightforward.  Adjusting for recubes can be complex.</p>
+                        <p>The problem with memorizing specific scores is that there are a lot of them.  We tend to get very familiar with the five-point match, but how many people memorize the doubling window of a recube to 4 at six-away nine-away?  Not many.</p>
+                        <p>The reality, especially in this blessed era of clocks, is that very few players do more than one or two match-equity calculations per match.  Instead, we rely on a few familiar scores and a bunch of vague heuristics:
+                        <ul>
+                            <li>Treat roughly even scores greater than seven-away the same as Money.</li>
+                            <li>At uneven scores, non-gammonish initial cubes are largely similar to money, but gammons and higher cube levels require big adjustments.</li>
+                            <li>Etc.</li>
+                        </ul>
+                    These heuristics can be helpful, but should be examined, tested, and refined.  That's what this tool is for.</p> 
+
+                    </fieldset>
+                    <fieldset data-role="collapsible">
+                        <legend>Early Observations</legend>
+                        <p>The following are some of my early observations after first playing with the data.  They serve as illustrations of how to use this tool to ask and answer questions about match-play.</p> 
+                        <p>To start, select the first deck: Borderline Take/Pass: No gammons. The first position up is a pure last-roll 25% borderline Take/Pass.  Its particular value here is that the data line up perfectly with a standard match-equity take-point calculation, since there are no gammons or recubes to account for.  In other words, this position illustrates how the raw MET calculations behave over the full range of scores.<p>
+                        <p>Click Next to see the next position -- a medium length race that is also borderline Take/Pass, this time with 21.6% wins, the rest of the take made up by recube equity.  We will switch back and forth between these positions.  (Note that the name of each position is displayed at the bottom of the Money data under the position.  Also note that to the right of the name is a Favorites button.  You can add non-contiguous positions -- say from different decks -- to Favorites and then run the Favorites deck for easy one-click comparisons.)</p>
+
+                        <div data-role="collapsible-set" data-corners="false"   >
+                            <fieldset data-role="collapsible"   >
+                                <legend>Doubles from 2-away</legend>
+                                    <p>Back to position #1.  Make sure Sort D is selected and scroll to the bottom of the table to see the data where 2-away doubles.  On the take side, you should see a whole column of big red numbers: -.3, -.4, -.5 and the like.  You don't want to give 2-away a 75% chance to win with perfect efficiency, so instead you pass.</p>
+                                    <p>Click Next for position #2, looking at the same 2-away data rows.  Now there are a mix of takes and passes, and the passes are of smaller magnitude.  There are two differences between the positions:
+                                        <ul>
+                                            <li>The taker in #2 wins less often (21.6% instead of 25%).</li>
+                                            <li>The taker in #2 gets an automatic recube to 4.</li>
+                                        </ul>
+                                    The two differences act in opposite directions and generally the second difference is greater than the first.  But only when the second difference applies!  At -2,-2 the taker doesn't get to recube and at -2,-3 the taker doesn't get full value from the recube.  So those are big passes.  At -2,-4 the trailer gets perfect value from the recube and the initial double is an error.  -2,-5, -2-6, and -2-7 are all passes, but -2,-8 is a take, perhaps because winning takes the trailer to -4, which I understand to be particularly valuable.
+                                    </p>
+                            </fieldset>
+                            <fieldset data-role="collapsible"   >
+                                <legend>Redoubles from 4-away</legend>
+                                <p>If it's so bad to take an initial cube when the doubler is 2-away, what about taking a recube to 4 when the doubler is 4-away?  Scroll up to the 4-away rows and look at the second group of columns: -4,-3 through -4,-7 are passes, but trailing -8 or more are takes.  (I did not know this.  I would have guessed they were all passes.)  Compare to position #2 where the recube is active and see that -4,-3 to -4,-5 are still passes, -4,-6 is a take, and when the taker is further away the recube is a blunder.  That's pretty different from what we saw when the doubler is 2-away and all scores are proper doubles except -2,-4.  (Ah, perhaps part of that difference is cube ownership.  Two-away is doubling from the center whereas 4-away must own the cube and accordingly gives up more by doubling.)</p>
+                            </fieldset>
+                            <fieldset data-role="collapsible"   >
+                                <legend>Takes at 2-away</legend>
+                                    <p>What can we see when 2-away is taking?  We could look at the bottom row of each section of the table, but instead click Sort T (sort by taker) and scroll to the bottom of the table.  For position #1 we see that -2,-2 and -3,-2 are passes, but all other scores are hefty takes.  Again, it's good to go out (win) efficiently with no risk of overage.  Compare to position #2 and now we see a mixture of close takes and passes.  Now there's only one difference between the positions in that the taker will never recube in either case, so the efficiency of winning two points is offset by winning 21.6% instead of 25%.  (Again, I did not know this.  I knew that -4,-2 and -5,-2 were big takes, so assumed all the others were too.)
+                                    </p>
+                            </fieldset>
+                            <fieldset data-role="collapsible"   >
+                                <legend>Doubles from 5-away</legend>
+                                <p>Position #1, Sort D, scroll to 5-away doubling.  All double-takes, where the doubles are just about as strong as they are for money (in the mid .4s compared to .5) and the takes at -5,-5 or higher are fairly close (.01 to .05).  I'm surprised they are that close.  Yes, they are bigger takes than for money, but not much bigger.  I had internalized that there was this big change from -5 to -4, since at -4 you can win with a doubled gammon.  Therefor, I thought, you're much more inclined to take when 5-away offers a non-gammonish cube since you don't want to let him get to 4-away cheaply.</p>
+                                </p>However, compare to position #2.  Now the taker wins 21.6% instead of 25%, and doesn't get an automatic recube.  Nevertheless, the takes here are much bigger, crossing into the .1 range.  This can't just be a function of 4-away being so attractive since that should have been true in position #1.  So I think what is really going on here is that the potential recube to 4 is just so juicy when it happens.  And we can look -- sort by taker and look at what happens when 5-away is recubed to 4.  Massive passes (position #1 or #2).  It seems it's that potential recube that makes taking 5-away's cube so attractive in position #2 (and which can never happen in position #1).</p>
+                            </fieldset>
+                            <fieldset data-role="collapsible"   >
+                                <legend>Random reference points</legend>
+                                    <p>Here's something different.  Say you're leading 2-0 in a 7 point match.  You accept an initial cube and turn the game around into a race that you're winning.  When do you recube?</p>
+                                    <p>Check out position #2, -5,-7, recube to 4.  I'll wait.</p>
+                                    <p>It's a recube by only .001.  Can we infer that all non-gammon non-last-roll positions become correct recubes at this score just as they approach being money passes?  Well, click Next for position #3.  Here's a post ace-point position with a checker on the bar that also happens to be a non-gammon non-last-roll position that's borderline Take/Pass for money.  And at -5,-7, the recube to 4 is correct by just .01.  We may have a factoid here.  I'm guessing there are a few more in these tables waiting to be discovered.            
+                                    </p>
+                            </fieldset>
+                        </div><br>
+
+                    </fieldset>
+                    <fieldset data-role="collapsible">
+                        <legend>How Was The Data Collected?</legend>
+                        <p>By hand.  (Just kidding.)</p>
+                        <p>XG creator, Xavier Dufaure de Citres, showed me how to hack a text-based match file -- how to modify the score and cube-level at will between and within games -- in a way that XG will accept.  So I created a 372-game match.txt file that takes a single position through all scores and cube-levels within a 13 point match.  XG would import the txt file and analyze the "match", then export the results to an html directory.  I wrote python scripts to scrape the data from the html files and organize it into tables for the website.</p>
+                        <p>All in all the process takes about five minutes of script-running split before and after the XG analysis, while the XG analysis takes about 90 minutes to do a single position at XG Roller ++.  
+                        <p>Technical note: I collected the Money Cube Action data with Jacoby turned <strong>off</strong> because I wanted to make the most direct comparison to score-based data, and we don't use Jacoby in matches.</p>               
+                      </fieldset>                
+                    <fieldset data-role="collapsible" id="sdHelp">
+                        <legend>Open Questions</legend>
+                        <p>
+                            <ul>
+                                <li><p>Do I need to upgrade to rollouts?  All present data is XG Roller ++, a seven-move truncated rollout using 3-ply analysis and Variance Reduction.  It plays very strong, but not as strong as rollouts, apparently.</p>
+                                    <p>I had initially thought analysis strentgh shouldn't really matter since what I wanted to focus on was the change in analysis due to match-score.  But some Janowski posts lead me to believe that better analysis leads to better tuning to the score as well.  Also, I'm seeing a spread of .05 between XG Roller ++ and 3-ply rollout even in races.  Even if that spread were randomly distributed, it would make the data much fuzzier.  I'm inclined to re-run with rollouts, after getting a round of feedback.</p>
+                                </li>
+                                <li><p>I think I should likely get rid of the backgame positions and replace them with some kind of attacking positions with similar gammons -- will take less time to rollout and the results will be more accurate.</p></li>
+                                <li><p>I collected the Money Cube Action data with Jacoby turned <strong>off</strong> because I wanted to make the most direct comparison to score-based data, and we don't use Jacoby in matches.  Does anybody want to see money results with Jacoby on (in addition)?  I guess it would be of value when looking at early-game double decisions.</p></li>
+                                <li><p>Interpreting a borderline Take-Pass cube is clear -- interpreting a borderline Double-No Double cube less so.  Position #3: Part of the reason it's borderline D-ND is that the volatility is so low since a checker is closed out and most rolls maintain status quo.  So maybe my Random Reference Point argument is not so strong?</p></li>
+                            </ul>
+
+                        </p>
+                    </fieldset>
+                </div>  
+                <br><br>  
+            </div><!-- /content -->
+        </div><!-- page -->
+
+
+
+
+        <script type="text/javascript" src="js/bgLog/bglogCore-2010B-JB-CC-svg.min.js"></script>
+
+	</body>
+</html>

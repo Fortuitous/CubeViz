@@ -1,0 +1,580 @@
+.centeredtext {
+	text-align:center;
+	margin: 10px;
+	white-space:normal !important;
+}
+.lefttext {
+	text-align:left;
+	white-space:normal !important;
+}
+.whitebar {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 1px;
+	width: 100%;
+}
+.redbar {
+	background-color: #c1272d;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 5px;
+	width: 100%;
+}
+
+.blackbar {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 5px;
+	width: 100%;
+}
+
+.vwhitebar {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 100%;
+	width: 1px;
+}
+.vredbar {
+	background-color: #c1272d;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 100%;
+	width: 5px;
+}
+
+.vblackbar {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	height: 100%;
+	width: 5px;
+}
+
+
+.metaButton {
+	border-style: none;
+}
+
+.navFootBtn {
+/*	font-size: 140%;*/
+	font-style: italic;
+}
+
+#About {
+/*	background-color: #FFFFF0;*/
+	background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: 90% 85px;
+/*	margin: 0px;*/
+	/*padding: 15px;*/
+	/*min-height: 100%;*/
+}
+
+.AboutContent, #InitialFC, #InitialDS {
+	padding: 15px;
+}
+
+.DSContent {
+	padding: 4px;
+}
+
+#swapButton {
+	float: left;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+#hintButton {
+	float: right;
+	margin-top: 0px;
+}
+.movebutton {
+	text-decoration: none;
+}
+
+.outcomedist {
+	display: none;
+/*	font-style: italic;  */
+	font-size: 90%;
+	padding-bottom:10px;
+}
+
+.favMessage, #clipMessage {
+	display: none;
+}
+
+.button-wrap {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+th.tablehintclass {
+	text-align:left !important;
+}
+
+#flashcards {
+/*	height: 10px;  */
+	overflow: hidden !important;
+}
+
+/* iscrollview */
+#outerAnswerContainer div.iscroll-scroller {
+    width: 100% !important;
+    padding: 5px;
+}
+
+/* bglog stuff */
+#bglogContainer {
+	text-align: center;
+	position: relative; 
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 75%; 
+}
+
+.ui-btn:visited {
+	text-decoration: none !important;
+}
+.ui-content {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden; /* stops chrome scrollbar flashing, otherwise not reuired */
+}
+
+.button-span {
+    position: absolute;
+    right: 0;
+    margin-top: -5px !important;
+    margin-right: 10px
+}
+
+.split-button-custom {
+    float: right;
+    margin-right: 10px;
+    margin-top: -32px;
+    border-bottom-left-radius: 1em 1em;
+    border-bottom-right-radius: 1em 1em;
+    border-top-left-radius: 1em 1em;
+    border-top-right-radius: 1em 1em;   
+}
+
+.split-button-custom span.ui-btn-inner {
+    border-bottom-left-radius: 1em 1em;
+    border-bottom-right-radius: 1em 1em;
+    border-top-left-radius: 1em 1em;
+    border-top-right-radius: 1em 1em;
+    padding-right: 0px;
+}
+
+.split-button-custom span.ui-icon {
+    margin-top: 0px;
+    right: 0px;
+    top: 0px;
+    position: relative;
+}
+
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+label > * {
+	display: block; 
+	pointer-events: none; 
+}
+
+.leftpane {
+    width: 30%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+    border-right: 5px solid red;*/
+    overflow:hidden;
+    position: fixed;
+}
+
+.rightpane {
+    box-sizing: border-box;
+    width: 70%;
+    height: 450px;
+    position: relative;
+    float: right;
+/*    border-left: 5px solid red;*/
+    border-collapse: collapse;
+    position: relative;
+/*    position: fixed;*/    
+}
+
+#cubecontext {
+/*	border-collapse: collapse;*/
+	border-spacing: 1px;
+	/*table-layout: fixed;
+	width: 100%;
+	margin: 0 auto;
+    font-family: "Lucida Console";*/
+}
+
+#cubecontext td {
+/*    border: 1px solid #ddd;*/
+    /*padding: 8px;*/
+	border: none;
+	padding: 0px;
+	margin: 0px;
+    text-align: center;
+	position: relative;
+    left: 8px;
+}
+
+#legendtable td {
+/*    border: 1px solid #ddd;*/
+    /*padding: 8px;*/
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    left: 8px;
+
+}
+
+#cubecontext th {
+	/*padding: 8px;*/
+	border: none;
+    padding: 0px;
+	margin: 0px;
+    text-align: right;
+}
+
+
+.myheader {
+    height:200px;
+}
+
+.leftpanein {
+    width: 30%;
+    height: 100px;
+    float: left;
+    border-collapse: collapse;
+    overflow:hidden;
+    position: fixed;
+    z-index: 5;
+    opacity: 1;
+}
+
+.rightpanein {
+    box-sizing: border-box;
+    width: 70%;
+    height: 100px;
+    position: fixed;
+    float: right;
+    overflow:hidden;
+/*    align-content: right;*/
+    border-collapse: collapse;
+/*    position: relative;*/
+/*    position: fixed;*/ 
+	z-index: 5;
+	opacity: 1;   
+}
+
+.bottompanein {
+    box-sizing: border-box;
+    top: 105px;
+    bottom: 5px;
+    width: 70%;
+/*    height: 100%;*/
+    position: fixed;
+    float: right;
+/*    overflow-y: auto;*/
+/*    align-content: right;
+    border-collapse: collapse;
+/*    position: relative;*/
+/*    position: fixed;*/ 
+	z-index: 2;
+	opacity: 1;   
+}
+
+.rightalign {
+	position: absolute;
+	right: 0px;
+    top: 5px;
+}
+
+.rightalign2 {
+	position: absolute;
+	right: 250px;
+    top: 5px;
+}
+
+
+.rightalign3 {
+    position: absolute;
+    right: 350px;
+    top: 120px;
+}
+
+.legend {
+    position: absolute;
+    right: 5px;
+    bottom: 33px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 379px;
+    height: 140px;
+}
+
+.controls {
+    position: absolute;
+    right: 5px;
+    bottom: 275px;
+    border: 1px solid white;
+    padding: 10px;
+    height: 265px;
+    width: 379px;
+}
+
+.takerNeedsLegend {
+    position: absolute;
+    left: 173px;
+    top: 0px;
+}
+
+.doubleToLegend {
+    position: absolute;
+    left: 950px;
+    top: 120px;
+}
+
+.doubleToWidget {
+    position: absolute;
+    right: -180px;
+    top: 100px;
+}
+
+.matchLengthLegend {
+    position: absolute;
+    left: 950px;
+    top: 190px;
+}
+
+.matchLengthWidget {
+    position: absolute;
+    right: -45px;
+    top: 170px;
+}
+.dataLegend {
+    position: absolute;
+   left: 950px;
+    top:  260px;
+}
+
+.dataWidget {
+    position: absolute;
+    right: -45px;
+    top: 240px;
+}
+
+
+.dataTypeLegend2 {
+    position: absolute;
+    left: 15px;
+    top: 33px;
+}
+
+.dataTypeWidget2 {
+    position: absolute;
+    right: -120px;
+    top: 13px;
+}
+
+
+.doubleToLegend2 {
+    position: absolute;
+    left: 15px;
+    top: 98px;
+}
+
+.doubleToWidget2 {
+    position: absolute;
+    right: -180px;
+    top: 78px;
+}
+
+.matchLengthLegend2 {
+    position: absolute;
+    left: 15px;
+    top: 163px;
+}
+
+.matchLengthWidget2 {
+    position: absolute;
+    right: -45px;
+    top: 143px;
+}
+.dataLegend2 {
+    position: absolute;
+   left: 15px;
+    top:  230px;
+}
+
+.dataWidget2 {
+    position: absolute;
+    right: -45px;
+    top: 210px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.doublerNeedsLegend {
+    position: absolute;
+    left: 50px;
+    top: 290px;
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+}
+
+
+
+.headleft {
+    width: 12%;
+    float: left;
+    border-collapse: collapse;
+}
+.headright {
+    width: 70%;
+    float: right;
+    border-collapse: collapse;
+}
+
+
+.tr1 td:nth-child(1), .tr1 th:nth-child(1),
+.tr2 td:nth-child(2), .tr2 th:nth-child(2),
+.tr3 td:nth-child(3), .tr3 th:nth-child(3),
+.tr4 td:nth-child(4), .tr4 th:nth-child(4),
+.tr5 td:nth-child(5), .tr5 th:nth-child(5),
+.tr6 td:nth-child(6), .tr6 th:nth-child(6),
+.tr7 td:nth-child(7), .tr7 th:nth-child(7),
+.tr8 td:nth-child(8), .tr8 th:nth-child(8),
+.tr9 td:nth-child(9), .tr9 th:nth-child(9) { text-align:right }
+
+.tc1 td:nth-child(1), .tc1 th:nth-child(1),
+.tc2 td:nth-child(2), .tc2 th:nth-child(2),
+.tc3 td:nth-child(3), .tc3 th:nth-child(3),
+.tc4 td:nth-child(4), .tc4 th:nth-child(4),
+.tc5 td:nth-child(5), .tc5 th:nth-child(5),
+.tc6 td:nth-child(6), .tc6 th:nth-child(6),
+.tc7 td:nth-child(7), .tc7 th:nth-child(7),
+.tc8 td:nth-child(8), .tc8 th:nth-child(8),
+.tc9 td:nth-child(9), .tc9 th:nth-child(9) { text-align:center }
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+/*    border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+/*    background-color: #252525;*/
+    color: #fff;
+    text-align: left;
+    border-radius: 0px;
+    padding: 5px 17px;
+    
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    margin-right: 0px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+#SwapCopy {
+/*    border: 1px solid black;*/
+    width: 100% 
+/*    cellspacing: 0 
+    cellpadding="0" */
+
+}
+
+.center img {        
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid white; 
+  border-radius: 10px;
+}
+
+.help{
+    width: 50%;
+}
+
+#footers {
+    width: 29.7%;
+}
+
+
+
+
+/*#rpcontent {
+    position:absolute;
+    top: 400px;
+    z-index: 1;
+    left:0px;
+    right:0px;
+    bottom:0px;	
+	overflow-y: auto;
+}
+*/
+/*#cubecontext th {
+	border-bottom: 1px solid #ddd;	
+}*/
+
+
+
+/*table, th {
+    border: 1px solid blue*/
+}
+/*#btnSettings{
+    background-color: transparent;
+    border: 0;
+}*/
+/*#browseStart:after, #trainStart:after {
+    height: 16px;
+    width: 16px;
+    background-size: 12px 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+}*/
+/*#selectDeckForm, #settingsForm {
+	padding: 15px;*/ /* replaces the missing ui.content padding */
+/*}*/
+/* end bglog stuff */
