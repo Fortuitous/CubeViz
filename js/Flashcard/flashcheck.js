@@ -392,11 +392,14 @@ function onDeviceReady() {
         });
 
         console.log("Before decksplit conditional")
+
 		if (localStorage.selecteddecks){
 			var decksplit = localStorage.selecteddecks.split(",");
             restoreSavedDecks(decksplit);
             console.log("Restoring decks: " + decksplit)
 		}
+
+        if (localStorage.selecteddecks === undefined) restoreSavedDeck("#Deck41");
 
         if (localStorage.fave){
             fave = localStorage.fave.split(",")
@@ -726,6 +729,7 @@ function onDeviceReady() {
 
 	function restoreSavedDeck(deckName){ // *** should use prop
 		$(deckName).prop("checked", true).checkboxradio("refresh");
+        console.log(deckName)
 	}
 
 
