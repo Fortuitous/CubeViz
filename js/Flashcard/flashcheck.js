@@ -557,7 +557,7 @@ function onDeviceReady() {
             fbShowPointNumbers = (localStorage.fbShowPointNumbers === undefined) ? fbShowPointNumbers = "true" : fbShowPointNumbers = localStorage.fbShowPointNumbers;
             fbShowTakiPoints = (localStorage.fbShowTakiPoints === undefined) ? fbShowTakiPoints = "true" : fbShowTakiPoints = localStorage.fbShowTakiPoints;
             fbShowDeckName = (localStorage.fbShowDeckName === undefined) ? fbShowDeckName = "true" : fbShowDeckName = localStorage.fbShowDeckName;
-            mlength = (localStorage.mlength === undefined) ? mlength = 13 : mlength = Number(localStorage.mlength);
+            mlength = (localStorage.mlength === undefined) ? mlength = 25 : mlength = Number(localStorage.mlength);
             sortdt = (localStorage.sortdt === undefined) ? sortdt = "SortD" : sortdt = localStorage.sortdt;
             cubeLevel = (localStorage.cubeLevel === undefined) ? cubeLevel = 0 : cubeLevel = Number(localStorage.cubeLevel);
             showCell = (localStorage.showCell === undefined) ? showCell = "Show" : showCell = localStorage.showCell;
