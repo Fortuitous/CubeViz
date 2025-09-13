@@ -454,7 +454,7 @@ function onDeviceReady() {
     function createDeckMenu() {
 
 /*        var deckSetOrder = [0, 1, 6, 2, 3, 4, 5, 8, 9, 7]*/
-        var deckSetOrder = [10, 12, 9, 13, 11]        
+        var deckSetOrder = [10, 12, 9, 13, 11, 14]        
         for (var h=deckSetOrder.length; h>0; h--){
             i = h - 1
             var content = '<fieldset data-role="collapsible" data-corners="false" class="decksetclass" id="' + DeckSet[deckSetOrder[i]].DeckSetName + '"><legend data-position="inline">' + DeckSet[deckSetOrder[i]].DeckSetName + '<span style="float:right;" class="button-span"><a id="buyButton' + deckSetOrder[i] + '" class="ui-btn ui-btn-icon-notext ui-icon-lock ui-corner-all buyButton metaButton" style="float:right"></a><a id="infoButton' + deckSetOrder[i] + '" style="float:right; margin-right: 10px;" class="ui-btn ui-btn-icon-notext ui-icon-info ui-corner-all infoButton metaButton"></a></span></legend><div data-role="controlgroup" data-corners="false" class="insidedecksetclass" id="Inside' + deckSetOrder[i] + '"></div></fieldset>'            
@@ -462,7 +462,7 @@ function onDeviceReady() {
             $(content).prependTo('#selectDeckForm')
 
 /*            var deckOrder = [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 9, 10, 11, 12, 13, 14, 15, 16, 17, 27, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 40, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42, 43] */
-            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52]             
+            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52, 53]             
             // To distinguish Deck number from Deck order.
             // May use same techinique for DeckSet above when needed.  
 

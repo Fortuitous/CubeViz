@@ -19,3 +19,4 @@ DeckSet[10] = new makeDeckSet("Double / No Double", 0);
 DeckSet[11] = new makeDeckSet("Double / Too Good", 0);
 DeckSet[12] = new makeDeckSet("Take", 0);
 DeckSet[13] = new makeDeckSet("Pass", 0);
+DeckSet[14] = new makeDeckSet("Bearoffs", 0);
