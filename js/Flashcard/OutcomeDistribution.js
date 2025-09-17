@@ -25911,3 +25911,147 @@ Outcome[0][6855] = new makeOutcome(82.76, 0.00, 0.00, 17.24, 0.00, 0.00);
 
   // Pass1.3
 Outcome[0][6857] = new makeOutcome(84.93, 0.00, 0.00, 15.07, 0.00, 0.00); 
+
+
+  // New25Sampled
+Outcome[0][6859] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // 6ptSampled50Test2
+Outcome[0][6861] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // RaceABCDD
+Outcome[0][6863] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDC
+Outcome[0][6865] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDB
+Outcome[0][6867] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDA
+Outcome[0][6859] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDB
+Outcome[0][6861] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDC
+Outcome[0][6863] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // RaceABCDD
+Outcome[0][6865] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // 6ptTPQA
+Outcome[0][6867] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // 6ptTPQB
+Outcome[0][6869] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // 6ptTPQC
+Outcome[0][6871] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // 6ptTPQD
+Outcome[0][6873] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // WoolseyRace
+Outcome[0][6875] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // Woolsey6ptTP
+Outcome[0][6877] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // SnowieRace
+Outcome[0][6879] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // Snowie6ptTP
+Outcome[0][6881] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // MecRaceABCD
+Outcome[0][6883] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // MecRaceABCDB
+Outcome[0][6885] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // MecRaceABCDC
+Outcome[0][6887] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // MecRaceABCDD
+Outcome[0][6889] = new makeOutcome(78.40, 0.00, 0.00, 21.60, 0.00, 0.00); 
+
+
+  // Mec6ptTPQ
+Outcome[0][6891] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // Mec6ptTPQB
+Outcome[0][6893] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // Mec6ptTPQC
+Outcome[0][6895] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // Mec6ptTPQD
+Outcome[0][6897] = new makeOutcome(75.00, 0.00, 0.00, 25.00, 0.00, 0.00); 
+
+
+  // HoldingDT26
+Outcome[0][6899] = new makeOutcome(74.02, 3.31, 0.06, 25.98, 1.97, 0.04); 
+
+
+  // HoldingTP10pt22
+Outcome[0][6901] = new makeOutcome(77.54, 1.72, 0.01, 22.46, 0.77, 0.01); 
+
+
+  // HoldingDND29
+Outcome[0][6903] = new makeOutcome(70.94, 1.68, 0.02, 29.06, 1.09, 0.01); 
+
+
+  // HoldingRNR27
+Outcome[0][6905] = new makeOutcome(72.51, 1.92, 0.03, 27.49, 1.12, 0.02); 
+
+
+  // 2Roll
+Outcome[0][6907] = new makeOutcome(86.11, 0.00, 0.00, 13.89, 0.00, 0.00); 
+
+
+  // 3Roll
+Outcome[0][6909] = new makeOutcome(78.78, 0.00, 0.00, 21.22, 0.00, 0.00); 
+
+
+  // 4Roll
+Outcome[0][6911] = new makeOutcome(74.55, 0.00, 0.00, 25.45, 0.00, 0.00); 
+
+
+  // 5Roll
+Outcome[0][6913] = new makeOutcome(71.82, 0.00, 0.00, 28.18, 0.00, 0.00); 
+
+
+  // 6Roll
+Outcome[0][6915] = new makeOutcome(69.81, 0.00, 0.00, 30.19, 0.00, 0.00); 
+
+
+  // 7Roll
+Outcome[0][6917] = new makeOutcome(68.27, 0.00, 0.00, 31.73, 0.00, 0.00); 
+
+
+  // 8Roll
+Outcome[0][6919] = new makeOutcome(67.03, 0.00, 0.00, 32.97, 0.00, 0.00); 

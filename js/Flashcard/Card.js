@@ -7032,3 +7032,127 @@ Card[6840] = new makeCard(6840 , 0);
 
   // Pass1.3
 Card[6841] = new makeCard(6841 , 0); 
+
+
+  // RaceABCDA
+Card[6842] = new makeCard(6842 , 0); 
+
+
+  // RaceABCDB
+Card[6843] = new makeCard(6843 , 0); 
+
+
+  // RaceABCDC
+Card[6844] = new makeCard(6844 , 0); 
+
+
+  // RaceABCDD
+Card[6845] = new makeCard(6845 , 0); 
+
+
+  // 6ptTPQA
+Card[6846] = new makeCard(6846 , 0); 
+
+
+  // 6ptTPQB
+Card[6847] = new makeCard(6847 , 0); 
+
+
+  // 6ptTPQC
+Card[6848] = new makeCard(6848 , 0); 
+
+
+  // 6ptTPQD
+Card[6849] = new makeCard(6849 , 0); 
+
+
+  // WoolseyRace
+Card[6850] = new makeCard(6850 , 0); 
+
+
+  // Woolsey6ptTP
+Card[6851] = new makeCard(6851 , 0); 
+
+
+  // SnowieRace
+Card[6852] = new makeCard(6852 , 0); 
+
+
+  // Snowie6ptTP
+Card[6853] = new makeCard(6853 , 0); 
+
+
+  // MecRaceABCD
+Card[6854] = new makeCard(6854 , 0); 
+
+
+  // MecRaceABCDB
+Card[6855] = new makeCard(6855 , 0); 
+
+
+  // MecRaceABCDC
+Card[6856] = new makeCard(6856 , 0); 
+
+
+  // MecRaceABCDD
+Card[6857] = new makeCard(6857 , 0); 
+
+
+  // Mec6ptTPQ
+Card[6858] = new makeCard(6858 , 0); 
+
+
+  // Mec6ptTPQB
+Card[6859] = new makeCard(6859 , 0); 
+
+
+  // Mec6ptTPQC
+Card[6860] = new makeCard(6860 , 0); 
+
+
+  // Mec6ptTPQD
+Card[6861] = new makeCard(6861 , 0); 
+
+
+  // HoldingDT26
+Card[6862] = new makeCard(6862 , 0); 
+
+
+  // HoldingTP10pt22
+Card[6863] = new makeCard(6863 , 0); 
+
+
+  // HoldingDND29
+Card[6864] = new makeCard(6864 , 0); 
+
+
+  // HoldingRNR27
+Card[6865] = new makeCard(6865 , 0); 
+
+
+  // 2Roll
+Card[6866] = new makeCard(6866 , 0); 
+
+
+  // 3Roll
+Card[6867] = new makeCard(6867 , 0); 
+
+
+  // 4Roll
+Card[6868] = new makeCard(6868 , 0); 
+
+
+  // 5Roll
+Card[6869] = new makeCard(6869 , 0); 
+
+
+  // 6Roll
+Card[6870] = new makeCard(6870 , 0); 
+
+
+  // 7Roll
+Card[6871] = new makeCard(6871 , 0); 
+
+
+  // 8Roll
+Card[6872] = new makeCard(6872 , 0); 

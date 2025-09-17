@@ -973,6 +973,7 @@ function onDeviceReady() {
 
     function selectCards(){  //  Loads currentcards[train] with cards from selected decks
 
+
         browselist = [];
         
         for (var i=0; i < Card.length; i++){  // Clear cards
@@ -987,7 +988,7 @@ function onDeviceReady() {
         
         //for (var i=6842; i < CardInDeck.length; i++){ // 6842 is beginning of CubeContext cards
 
-        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878]        
+        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6903, 6904, 6905, 6906, 6907, 6908, 6909]        
         for (var i=0; i<CCCardOrder.length; i++){
 
 

@@ -7071,3 +7071,127 @@ CardInDeck[6877] = new makeCardInDeck(6840, 52, 0);
 
   // Pass1.3
 CardInDeck[6878] = new makeCardInDeck(6841, 52, 0); 
+
+
+  // RaceABCDA
+CardInDeck[6879] = new makeCardInDeck(6842, 53, 0); 
+
+
+  // RaceABCDB
+CardInDeck[6880] = new makeCardInDeck(6843, 53, 0); 
+
+
+  // RaceABCDC
+CardInDeck[6881] = new makeCardInDeck(6844, 53, 0); 
+
+
+  // RaceABCDD
+CardInDeck[6882] = new makeCardInDeck(6845, 53, 0); 
+
+
+  // 6ptTPQA
+CardInDeck[6883] = new makeCardInDeck(6846, 53, 0); 
+
+
+  // 6ptTPQB
+CardInDeck[6884] = new makeCardInDeck(6847, 53, 0); 
+
+
+  // 6ptTPQC
+CardInDeck[6885] = new makeCardInDeck(6848, 53, 0); 
+
+
+  // 6ptTPQD
+CardInDeck[6886] = new makeCardInDeck(6849, 53, 0); 
+
+
+  // WoolseyRace
+CardInDeck[6887] = new makeCardInDeck(6850, 54, 0); 
+
+
+  // Woolsey6ptTP
+CardInDeck[6888] = new makeCardInDeck(6851, 54, 0); 
+
+
+  // SnowieRace
+CardInDeck[6889] = new makeCardInDeck(6852, 55, 0); 
+
+
+  // Snowie6ptTP
+CardInDeck[6890] = new makeCardInDeck(6853, 55, 0); 
+
+
+  // MecRaceABCD
+CardInDeck[6891] = new makeCardInDeck(6854, 56, 0); 
+
+
+  // MecRaceABCDB
+CardInDeck[6892] = new makeCardInDeck(6855, 56, 0); 
+
+
+  // MecRaceABCDC
+CardInDeck[6893] = new makeCardInDeck(6856, 56, 0); 
+
+
+  // MecRaceABCDD
+CardInDeck[6894] = new makeCardInDeck(6857, 56, 0); 
+
+
+  // Mec6ptTPQ
+CardInDeck[6895] = new makeCardInDeck(6858, 56, 0); 
+
+
+  // Mec6ptTPQB
+CardInDeck[6896] = new makeCardInDeck(6859, 56, 0); 
+
+
+  // Mec6ptTPQC
+CardInDeck[6897] = new makeCardInDeck(6860, 56, 0); 
+
+
+  // Mec6ptTPQD
+CardInDeck[6898] = new makeCardInDeck(6861, 56, 0); 
+
+
+  // HoldingDT26
+CardInDeck[6899] = new makeCardInDeck(6862, 57, 0); 
+
+
+  // HoldingTP10pt22
+CardInDeck[6900] = new makeCardInDeck(6863, 59, 0); 
+
+
+  // HoldingDND29
+CardInDeck[6901] = new makeCardInDeck(6864, 58, 0); 
+
+
+  // HoldingRNR27
+CardInDeck[6902] = new makeCardInDeck(6865, 58, 0); 
+
+
+  // 2Roll
+CardInDeck[6903] = new makeCardInDeck(6866, 53, 0); 
+
+
+  // 3Roll
+CardInDeck[6904] = new makeCardInDeck(6867, 53, 0); 
+
+
+  // 4Roll
+CardInDeck[6905] = new makeCardInDeck(6868, 53, 0); 
+
+
+  // 5Roll
+CardInDeck[6906] = new makeCardInDeck(6869, 53, 0); 
+
+
+  // 6Roll
+CardInDeck[6907] = new makeCardInDeck(6870, 53, 0); 
+
+
+  // 7Roll
+CardInDeck[6908] = new makeCardInDeck(6871, 53, 0); 
+
+
+  // 8Roll
+CardInDeck[6909] = new makeCardInDeck(6872, 53, 0); 

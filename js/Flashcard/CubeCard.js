@@ -10422,3 +10422,189 @@ CubeCard[6840][1] = 6856;
 CubeCard[6841] = []; 
 CubeCard[6841][0] = 6857;
 CubeCard[6841][1] = 6858;
+
+
+  // RaceABCDA
+CubeCard[6842] = []; 
+CubeCard[6842][0] = 6859;
+CubeCard[6842][1] = 6860;
+
+
+  // RaceABCDB
+CubeCard[6843] = []; 
+CubeCard[6843][0] = 6861;
+CubeCard[6843][1] = 6862;
+
+
+  // RaceABCDC
+CubeCard[6844] = []; 
+CubeCard[6844][0] = 6863;
+CubeCard[6844][1] = 6864;
+
+
+  // RaceABCDD
+CubeCard[6845] = []; 
+CubeCard[6845][0] = 6865;
+CubeCard[6845][1] = 6866;
+
+
+  // 6ptTPQA
+CubeCard[6846] = []; 
+CubeCard[6846][0] = 6867;
+CubeCard[6846][1] = 6868;
+
+
+  // 6ptTPQB
+CubeCard[6847] = []; 
+CubeCard[6847][0] = 6869;
+CubeCard[6847][1] = 6870;
+
+
+  // 6ptTPQC
+CubeCard[6848] = []; 
+CubeCard[6848][0] = 6871;
+CubeCard[6848][1] = 6872;
+
+
+  // 6ptTPQD
+CubeCard[6849] = []; 
+CubeCard[6849][0] = 6873;
+CubeCard[6849][1] = 6874;
+
+
+  // WoolseyRace
+CubeCard[6850] = []; 
+CubeCard[6850][0] = 6875;
+CubeCard[6850][1] = 6876;
+
+
+  // Woolsey6ptTP
+CubeCard[6851] = []; 
+CubeCard[6851][0] = 6877;
+CubeCard[6851][1] = 6878;
+
+
+  // SnowieRace
+CubeCard[6852] = []; 
+CubeCard[6852][0] = 6879;
+CubeCard[6852][1] = 6880;
+
+
+  // Snowie6ptTP
+CubeCard[6853] = []; 
+CubeCard[6853][0] = 6881;
+CubeCard[6853][1] = 6882;
+
+
+  // MecRaceABCD
+CubeCard[6854] = []; 
+CubeCard[6854][0] = 6883;
+CubeCard[6854][1] = 6884;
+
+
+  // MecRaceABCDB
+CubeCard[6855] = []; 
+CubeCard[6855][0] = 6885;
+CubeCard[6855][1] = 6886;
+
+
+  // MecRaceABCDC
+CubeCard[6856] = []; 
+CubeCard[6856][0] = 6887;
+CubeCard[6856][1] = 6888;
+
+
+  // MecRaceABCDD
+CubeCard[6857] = []; 
+CubeCard[6857][0] = 6889;
+CubeCard[6857][1] = 6890;
+
+
+  // Mec6ptTPQ
+CubeCard[6858] = []; 
+CubeCard[6858][0] = 6891;
+CubeCard[6858][1] = 6892;
+
+
+  // Mec6ptTPQB
+CubeCard[6859] = []; 
+CubeCard[6859][0] = 6893;
+CubeCard[6859][1] = 6894;
+
+
+  // Mec6ptTPQC
+CubeCard[6860] = []; 
+CubeCard[6860][0] = 6895;
+CubeCard[6860][1] = 6896;
+
+
+  // Mec6ptTPQD
+CubeCard[6861] = []; 
+CubeCard[6861][0] = 6897;
+CubeCard[6861][1] = 6898;
+
+
+  // HoldingDT26
+CubeCard[6862] = []; 
+CubeCard[6862][0] = 6899;
+CubeCard[6862][1] = 6900;
+
+
+  // HoldingTP10pt22
+CubeCard[6863] = []; 
+CubeCard[6863][0] = 6901;
+CubeCard[6863][1] = 6902;
+
+
+  // HoldingDND29
+CubeCard[6864] = []; 
+CubeCard[6864][0] = 6903;
+CubeCard[6864][1] = 6904;
+
+
+  // HoldingRNR27
+CubeCard[6865] = []; 
+CubeCard[6865][0] = 6905;
+CubeCard[6865][1] = 6906;
+
+
+  // 2Roll
+CubeCard[6866] = []; 
+CubeCard[6866][0] = 6907;
+CubeCard[6866][1] = 6908;
+
+
+  // 3Roll
+CubeCard[6867] = []; 
+CubeCard[6867][0] = 6909;
+CubeCard[6867][1] = 6910;
+
+
+  // 4Roll
+CubeCard[6868] = []; 
+CubeCard[6868][0] = 6911;
+CubeCard[6868][1] = 6912;
+
+
+  // 5Roll
+CubeCard[6869] = []; 
+CubeCard[6869][0] = 6913;
+CubeCard[6869][1] = 6914;
+
+
+  // 6Roll
+CubeCard[6870] = []; 
+CubeCard[6870][0] = 6915;
+CubeCard[6870][1] = 6916;
+
+
+  // 7Roll
+CubeCard[6871] = []; 
+CubeCard[6871][0] = 6917;
+CubeCard[6871][1] = 6918;
+
+
+  // 8Roll
+CubeCard[6872] = []; 
+CubeCard[6872][0] = 6919;
+CubeCard[6872][1] = 6920;
