@@ -423,13 +423,13 @@ function onDeviceReady() {
 		currentTheme = eval(fbTheme);
 
 // Simon's suggested bglog fixes
-        animateFlag = false;
+//        animateFlag = false;
         bglog.makeBoard();
         changeTheme(fbTheme);
         changeUITheme(fbUITheme);
-        bglog.loadXgId(xgEmptyId);
+        bglog.loadXgId(xgStartPos);
         applySettings();
-        animateFlag = true;
+//        animateFlag = true;
 
 
 /*		animateFlag = false;*/
