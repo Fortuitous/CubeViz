@@ -421,12 +421,23 @@ function onDeviceReady() {
         isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
         
 		currentTheme = eval(fbTheme);
+
+// Simon's suggested bglog fixes
+        animateFlag = false;
+        bglog.makeBoard();
+        changeTheme(fbTheme);
+        changeUITheme(fbUITheme);
+        bglog.loadXgId(xgEmptyId);
+        applySettings();
+        animateFlag = true;
+
+
 /*		animateFlag = false;*/
-		bglog.makeBoard();
+/*		bglog.makeBoard();
 		changeTheme(fbTheme);
         changeUITheme(fbUITheme);
 
-		applySettings();
+		applySettings();*/
 /*		animateFlag = true;*/
 
         markSettings(); // adjust settings ui to fbValues
