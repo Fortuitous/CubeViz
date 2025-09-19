@@ -473,9 +473,10 @@ function onDeviceReady() {
             $(content).prependTo('#selectDeckForm')
 
 /*            var deckOrder = [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 9, 10, 11, 12, 13, 14, 15, 16, 17, 27, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 40, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42, 43] */
-            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52, 53]             
+            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52, 53, 54, 55]             
             // To distinguish Deck number from Deck order.
             // May use same techinique for DeckSet above when needed.  
+            // If you're adding decks, remember to add cards in var CCCardOrder
 
             for (var j=0; j<deckOrder.length; j++){
                 if (Deck[deckOrder[j]].DeckSetID == deckSetOrder[i]){
@@ -999,7 +1000,7 @@ function onDeviceReady() {
         
         //for (var i=6842; i < CardInDeck.length; i++){ // 6842 is beginning of CubeContext cards
 
-        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6903, 6904, 6905, 6906, 6907, 6908, 6909]        
+        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6903, 6904, 6905, 6906, 6907, 6908, 6909, 6910, 6911, 6912, 6913, 6914, 6915, 6916, 6917, 6918, 6919, 6920, 6921, 6922, 6923]        
         for (var i=0; i<CCCardOrder.length; i++){
 
 

@@ -10608,3 +10608,87 @@ CubeCard[6871][1] = 6918;
 CubeCard[6872] = []; 
 CubeCard[6872][0] = 6919;
 CubeCard[6872][1] = 6920;
+
+
+  // 2Roll
+CubeCard[6873] = []; 
+CubeCard[6873][0] = 6921;
+CubeCard[6873][1] = 6922;
+
+
+  // 3Roll
+CubeCard[6874] = []; 
+CubeCard[6874][0] = 6923;
+CubeCard[6874][1] = 6924;
+
+
+  // 4Roll
+CubeCard[6875] = []; 
+CubeCard[6875][0] = 6925;
+CubeCard[6875][1] = 6926;
+
+
+  // 5Roll
+CubeCard[6876] = []; 
+CubeCard[6876][0] = 6927;
+CubeCard[6876][1] = 6928;
+
+
+  // 6Roll
+CubeCard[6877] = []; 
+CubeCard[6877][0] = 6929;
+CubeCard[6877][1] = 6930;
+
+
+  // 7Roll
+CubeCard[6878] = []; 
+CubeCard[6878][0] = 6931;
+CubeCard[6878][1] = 6932;
+
+
+  // 8Roll
+CubeCard[6879] = []; 
+CubeCard[6879][0] = 6933;
+CubeCard[6879][1] = 6934;
+
+
+  // 2Roll
+CubeCard[6880] = []; 
+CubeCard[6880][0] = 6935;
+CubeCard[6880][1] = 6936;
+
+
+  // 3Roll
+CubeCard[6881] = []; 
+CubeCard[6881][0] = 6937;
+CubeCard[6881][1] = 6938;
+
+
+  // 4Roll
+CubeCard[6882] = []; 
+CubeCard[6882][0] = 6939;
+CubeCard[6882][1] = 6940;
+
+
+  // 5Roll
+CubeCard[6883] = []; 
+CubeCard[6883][0] = 6941;
+CubeCard[6883][1] = 6942;
+
+
+  // 6Roll
+CubeCard[6884] = []; 
+CubeCard[6884][0] = 6943;
+CubeCard[6884][1] = 6944;
+
+
+  // 7Roll
+CubeCard[6885] = []; 
+CubeCard[6885][0] = 6945;
+CubeCard[6885][1] = 6946;
+
+
+  // 8Roll
+CubeCard[6886] = []; 
+CubeCard[6886][0] = 6947;
+CubeCard[6886][1] = 6948;

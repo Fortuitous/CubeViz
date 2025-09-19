@@ -7195,3 +7195,59 @@ CardInDeck[6908] = new makeCardInDeck(6871, 53, 0);
 
   // 8Roll
 CardInDeck[6909] = new makeCardInDeck(6872, 53, 0); 
+
+
+  // 2Roll
+CardInDeck[6910] = new makeCardInDeck(6873, 54, 0); 
+
+
+  // 3Roll
+CardInDeck[6911] = new makeCardInDeck(6874, 54, 0); 
+
+
+  // 4Roll
+CardInDeck[6912] = new makeCardInDeck(6875, 54, 0); 
+
+
+  // 5Roll
+CardInDeck[6913] = new makeCardInDeck(6876, 54, 0); 
+
+
+  // 6Roll
+CardInDeck[6914] = new makeCardInDeck(6877, 54, 0); 
+
+
+  // 7Roll
+CardInDeck[6915] = new makeCardInDeck(6878, 54, 0); 
+
+
+  // 8Roll
+CardInDeck[6916] = new makeCardInDeck(6879, 54, 0); 
+
+
+  // 2Roll
+CardInDeck[6917] = new makeCardInDeck(6880, 55, 0); 
+
+
+  // 3Roll
+CardInDeck[6918] = new makeCardInDeck(6881, 55, 0); 
+
+
+  // 4Roll
+CardInDeck[6919] = new makeCardInDeck(6882, 55, 0); 
+
+
+  // 5Roll
+CardInDeck[6920] = new makeCardInDeck(6883, 55, 0); 
+
+
+  // 6Roll
+CardInDeck[6921] = new makeCardInDeck(6884, 55, 0); 
+
+
+  // 7Roll
+CardInDeck[6922] = new makeCardInDeck(6885, 55, 0); 
+
+
+  // 8Roll
+CardInDeck[6923] = new makeCardInDeck(6886, 55, 0); 
