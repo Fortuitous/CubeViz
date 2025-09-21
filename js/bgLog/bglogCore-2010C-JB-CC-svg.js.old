@@ -1,4 +1,4 @@
-// bglogCore-2010C-JB-CC-svg.js
+// bglogCore-2010B-JB-CC-svg.js
 
 var numberOfCubes = 1;
 var maxCubes = 4;
@@ -929,7 +929,7 @@ bglogSVG = {
 		if (((thisCheckerCount - thisBoard[thisPoint]) + thisCount) > 15) {
 			thisCount = (15 - (thisCheckerCount - (thisBoard[thisPoint])));
 		}
-		//if (thisCount < 6) {
+		if (thisCount < 6) {
 			//***thisBoard[thisPoint] = thisCount;
 			//console.log("up2: place " + thisCount + " checkers on " + thisBoardText +" point " + (thisPoint + 1));
 			// set number of checkers on point
@@ -963,7 +963,7 @@ bglogSVG = {
 					moveListArray[checkerName].push(pointX, pointY);
 				}
 			}
-		//}
+		}
 		else if (thisType == "add") {
 			//thisCount = 5;
 			//if ((thisCheckerCount + thisCount) > 15) thisCount = (15 - thisCheckerCount);
