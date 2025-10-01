@@ -26111,3 +26111,59 @@ Outcome[0][6945] = new makeOutcome(68.23, 0.00, 0.00, 31.77, 0.00, 0.00);
 
   // 8Roll
 Outcome[0][6947] = new makeOutcome(67.02, 0.00, 0.00, 32.98, 0.00, 0.00); 
+
+
+  // 2Roll
+Outcome[0][6949] = new makeOutcome(86.11, 0.00, 0.00, 13.89, 0.00, 0.00); 
+
+
+  // 3Roll
+Outcome[0][6951] = new makeOutcome(78.78, 0.00, 0.00, 21.22, 0.00, 0.00); 
+
+
+  // 4Roll
+Outcome[0][6953] = new makeOutcome(74.53, 0.00, 0.00, 25.47, 0.00, 0.00); 
+
+
+  // 5Roll
+Outcome[0][6955] = new makeOutcome(71.74, 0.00, 0.00, 28.26, 0.00, 0.00); 
+
+
+  // 6Roll
+Outcome[0][6957] = new makeOutcome(69.75, 0.00, 0.00, 30.25, 0.00, 0.00); 
+
+
+  // 7Roll
+Outcome[0][6959] = new makeOutcome(68.23, 0.00, 0.00, 31.77, 0.00, 0.00); 
+
+
+  // 8Roll
+Outcome[0][6961] = new makeOutcome(67.02, 0.00, 0.00, 32.98, 0.00, 0.00); 
+
+
+  // 2Roll
+Outcome[0][6963] = new makeOutcome(86.11, 0.00, 0.00, 13.89, 0.00, 0.00); 
+
+
+  // 3Roll
+Outcome[0][6965] = new makeOutcome(78.78, 0.00, 0.00, 21.22, 0.00, 0.00); 
+
+
+  // 4Roll
+Outcome[0][6967] = new makeOutcome(74.53, 0.00, 0.00, 25.47, 0.00, 0.00); 
+
+
+  // 5Roll
+Outcome[0][6969] = new makeOutcome(71.74, 0.00, 0.00, 28.26, 0.00, 0.00); 
+
+
+  // 6Roll
+Outcome[0][6971] = new makeOutcome(69.75, 0.00, 0.00, 30.25, 0.00, 0.00); 
+
+
+  // 7Roll
+Outcome[0][6973] = new makeOutcome(68.23, 0.00, 0.00, 31.77, 0.00, 0.00); 
+
+
+  // 8Roll
+Outcome[0][6975] = new makeOutcome(67.02, 0.00, 0.00, 32.98, 0.00, 0.00); 

@@ -62,3 +62,5 @@ Deck[52] = new makeDeck("No Gammons Pass", 13, 0);
 Deck[53] = new makeDeck("N-Roll Bearoffs XG++ (Not all on ace)", 14, 0);
 Deck[54] = new makeDeck("N-Roll Bearoffs XG++ XG2", 14, 0);
 Deck[55] = new makeDeck("N-Roll Bearoffs XG++ R-K", 14, 0);
+Deck[56] = new makeDeck("N-Roll Bearoffs Calc XG2", 14, 0);
+Deck[57] = new makeDeck("N-Roll Bearoffs Calc R-K", 14, 0);

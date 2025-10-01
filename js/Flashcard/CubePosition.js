@@ -7235,3 +7235,73 @@ CubePosition[6946] = new makeCubePosition("-N----------------------n-:1:1:1:00:1
   // 8Roll
 CubePosition[6947] = new makeCubePosition("-O----------------------o-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .437, .438, 0); 
 CubePosition[6948] = new makeCubePosition("-O----------------------o-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .525, .438, 0); 
+
+
+  // 2Roll
+CubePosition[6949] = new makeCubePosition("-D----------------------d-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .722, 1.444, 0); 
+CubePosition[6950] = new makeCubePosition("-D----------------------d-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .722, 1.444, 0); 
+
+
+  // 3Roll
+CubePosition[6951] = new makeCubePosition("-F----------------------f-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .769, 1.153, 0); 
+CubePosition[6952] = new makeCubePosition("-F----------------------f-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .769, 1.153, 0); 
+
+
+  // 4Roll
+CubePosition[6953] = new makeCubePosition("-H----------------------h-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .761, .919, 0); 
+CubePosition[6954] = new makeCubePosition("-H----------------------h-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .793, .919, 0); 
+
+
+  // 5Roll
+CubePosition[6955] = new makeCubePosition("-J----------------------j-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .708, .733, 0); 
+CubePosition[6956] = new makeCubePosition("-J----------------------j-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .756, .731, 0); 
+
+
+  // 6Roll
+CubePosition[6957] = new makeCubePosition("-L----------------------l-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .566, .579, 0); 
+CubePosition[6958] = new makeCubePosition("-L----------------------l-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .639, .584, 0); 
+
+
+  // 7Roll
+CubePosition[6959] = new makeCubePosition("-N----------------------n-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .475, .485, 0); 
+CubePosition[6960] = new makeCubePosition("-N----------------------n-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .565, .480, 0); 
+
+
+  // 8Roll
+CubePosition[6961] = new makeCubePosition("-O----------------------o-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .437, .438, 0); 
+CubePosition[6962] = new makeCubePosition("-O----------------------o-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .525, .438, 0); 
+
+
+  // 2Roll
+CubePosition[6963] = new makeCubePosition("-D----------------------d-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .722, 1.444, 0); 
+CubePosition[6964] = new makeCubePosition("-D----------------------d-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .722, 1.444, 0); 
+
+
+  // 3Roll
+CubePosition[6965] = new makeCubePosition("-F----------------------f-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .769, 1.153, 0); 
+CubePosition[6966] = new makeCubePosition("-F----------------------f-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .769, 1.153, 0); 
+
+
+  // 4Roll
+CubePosition[6967] = new makeCubePosition("-H----------------------h-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .761, .919, 0); 
+CubePosition[6968] = new makeCubePosition("-H----------------------h-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .793, .919, 0); 
+
+
+  // 5Roll
+CubePosition[6969] = new makeCubePosition("-J----------------------j-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .708, .733, 0); 
+CubePosition[6970] = new makeCubePosition("-J----------------------j-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .756, .731, 0); 
+
+
+  // 6Roll
+CubePosition[6971] = new makeCubePosition("-L----------------------l-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .566, .579, 0); 
+CubePosition[6972] = new makeCubePosition("-L----------------------l-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .639, .584, 0); 
+
+
+  // 7Roll
+CubePosition[6973] = new makeCubePosition("-N----------------------n-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .475, .485, 0); 
+CubePosition[6974] = new makeCubePosition("-N----------------------n-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .565, .480, 0); 
+
+
+  // 8Roll
+CubePosition[6975] = new makeCubePosition("-O----------------------o-:0:0:1:00:0:0:0:0:10", 0, 0, 0, .437, .438, 0); 
+CubePosition[6976] = new makeCubePosition("-O----------------------o-:1:1:1:00:1:0:0:0:10", 0, 0, 1, .525, .438, 0); 

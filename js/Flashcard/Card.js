@@ -7212,3 +7212,59 @@ Card[6885] = new makeCard(6885 , 0);
 
   // 8Roll
 Card[6886] = new makeCard(6886 , 0); 
+
+
+  // 2Roll
+Card[6887] = new makeCard(6887 , 0); 
+
+
+  // 3Roll
+Card[6888] = new makeCard(6888 , 0); 
+
+
+  // 4Roll
+Card[6889] = new makeCard(6889 , 0); 
+
+
+  // 5Roll
+Card[6890] = new makeCard(6890 , 0); 
+
+
+  // 6Roll
+Card[6891] = new makeCard(6891 , 0); 
+
+
+  // 7Roll
+Card[6892] = new makeCard(6892 , 0); 
+
+
+  // 8Roll
+Card[6893] = new makeCard(6893 , 0); 
+
+
+  // 2Roll
+Card[6894] = new makeCard(6894 , 0); 
+
+
+  // 3Roll
+Card[6895] = new makeCard(6895 , 0); 
+
+
+  // 4Roll
+Card[6896] = new makeCard(6896 , 0); 
+
+
+  // 5Roll
+Card[6897] = new makeCard(6897 , 0); 
+
+
+  // 6Roll
+Card[6898] = new makeCard(6898 , 0); 
+
+
+  // 7Roll
+Card[6899] = new makeCard(6899 , 0); 
+
+
+  // 8Roll
+Card[6900] = new makeCard(6900 , 0); 
