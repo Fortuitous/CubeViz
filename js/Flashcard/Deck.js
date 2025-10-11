@@ -64,3 +64,5 @@ Deck[54] = new makeDeck("N-Roll Bearoffs XG++ XG2", 14, 0);
 Deck[55] = new makeDeck("N-Roll Bearoffs XG++ R-K", 14, 0);
 Deck[56] = new makeDeck("N-Roll Bearoffs Calc XG2", 14, 0);
 Deck[57] = new makeDeck("N-Roll Bearoffs Calc R-K", 14, 0);
+Deck[58] = new makeDeck("20-Point Holding Game", 15, 0);
+Deck[59] = new makeDeck("Bar-Point Holding Game", 15, 0);

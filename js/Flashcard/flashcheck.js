@@ -465,7 +465,7 @@ function onDeviceReady() {
     function createDeckMenu() {
 
 /*        var deckSetOrder = [0, 1, 6, 2, 3, 4, 5, 8, 9, 7]*/
-        var deckSetOrder = [10, 12, 9, 13, 11, 14]        
+        var deckSetOrder = [10, 12, 9, 13, 11, 14, 15]        
         for (var h=deckSetOrder.length; h>0; h--){
             i = h - 1
             var content = '<fieldset data-role="collapsible" data-corners="false" class="decksetclass" id="' + DeckSet[deckSetOrder[i]].DeckSetName + '"><legend data-position="inline">' + DeckSet[deckSetOrder[i]].DeckSetName + '<span style="float:right;" class="button-span"><a id="buyButton' + deckSetOrder[i] + '" class="ui-btn ui-btn-icon-notext ui-icon-lock ui-corner-all buyButton metaButton" style="float:right"></a><a id="infoButton' + deckSetOrder[i] + '" style="float:right; margin-right: 10px;" class="ui-btn ui-btn-icon-notext ui-icon-info ui-corner-all infoButton metaButton"></a></span></legend><div data-role="controlgroup" data-corners="false" class="insidedecksetclass" id="Inside' + deckSetOrder[i] + '"></div></fieldset>'            
@@ -473,7 +473,7 @@ function onDeviceReady() {
             $(content).prependTo('#selectDeckForm')
 
 /*            var deckOrder = [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 9, 10, 11, 12, 13, 14, 15, 16, 17, 27, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 40, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42, 43] */
-            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52, 54, 55, 56, 57]             
+            var deckOrder = [30, 41, 42, 43, 47, 44, 45, 46, 50, 48, 49, 51, 52, 54, 55, 56, 57, 58]             
             // To distinguish Deck number from Deck order.
             // May use same techinique for DeckSet above when needed.  
             // If you're adding decks, remember to add cards in var CCCardOrder
@@ -1000,7 +1000,7 @@ function onDeviceReady() {
         
         //for (var i=6842; i < CardInDeck.length; i++){ // 6842 is beginning of CubeContext cards
 
-        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6903, 6904, 6905, 6906, 6907, 6908, 6909, 6910, 6911, 6912, 6913, 6914, 6915, 6916, 6917, 6918, 6919, 6920, 6921, 6922, 6923, 6924, 6925, 6926, 6927, 6928, 6929, 6930, 6931, 6932, 6933, 6934, 6935, 6936, 6937]        
+        var CCCardOrder = [6842, 6843, 6844, 6845, 6846, 6847, 6848, 6849, 6850, 6851, 6852, 6853, 6855, 6856, 6857, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6903, 6904, 6905, 6906, 6907, 6908, 6909, 6910, 6911, 6912, 6913, 6914, 6915, 6916, 6917, 6918, 6919, 6920, 6921, 6922, 6923, 6924, 6925, 6926, 6927, 6928, 6929, 6930, 6931, 6932, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 6941]        
         for (var i=0; i<CCCardOrder.length; i++){
 
 

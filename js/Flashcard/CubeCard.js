@@ -10776,3 +10776,27 @@ CubeCard[6899][1] = 6974;
 CubeCard[6900] = []; 
 CubeCard[6900][0] = 6975;
 CubeCard[6900][1] = 6976;
+
+
+  // Holding20-44
+CubeCard[6901] = []; 
+CubeCard[6901][0] = 6977;
+CubeCard[6901][1] = 6978;
+
+
+  // Holding20-33
+CubeCard[6902] = []; 
+CubeCard[6902][0] = 6979;
+CubeCard[6902][1] = 6980;
+
+
+  // Holding20-17
+CubeCard[6903] = []; 
+CubeCard[6903][0] = 6981;
+CubeCard[6903][1] = 6982;
+
+
+  // Holding20-14
+CubeCard[6904] = []; 
+CubeCard[6904][0] = 6983;
+CubeCard[6904][1] = 6984;

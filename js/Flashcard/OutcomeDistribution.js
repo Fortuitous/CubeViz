@@ -26167,3 +26167,19 @@ Outcome[0][6973] = new makeOutcome(68.23, 0.00, 0.00, 31.77, 0.00, 0.00);
 
   // 8Roll
 Outcome[0][6975] = new makeOutcome(67.02, 0.00, 0.00, 32.98, 0.00, 0.00); 
+
+
+  // Holding20-44
+Outcome[0][6977] = new makeOutcome(76.891, 6.338, 0.069, 23.109, 1.827, 0.030); 
+
+
+  // Holding20-33
+Outcome[0][6979] = new makeOutcome(76.242, 3.697, 0.052, 23.758, 1.744, 0.028); 
+
+
+  // Holding20-17
+Outcome[0][6981] = new makeOutcome(72.257, 1.920, 0.033, 27.743, 1.232, 0.018); 
+
+
+  // Holding20-14
+Outcome[0][6983] = new makeOutcome(70.535, 1.681, 0.044, 29.465, 1.178, 0.017); 
