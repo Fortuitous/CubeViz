@@ -7323,3 +7323,19 @@ CardInDeck[6940] = new makeCardInDeck(6903, 58, 0);
 
   // Holding20-14
 CardInDeck[6941] = new makeCardInDeck(6904, 58, 0); 
+
+
+  // Holding18-40
+CardInDeck[6942] = new makeCardInDeck(6905, 59, 0); 
+
+
+  // Holding18-32
+CardInDeck[6943] = new makeCardInDeck(6906, 59, 0); 
+
+
+  // Holding18-15
+CardInDeck[6944] = new makeCardInDeck(6907, 59, 0); 
+
+
+  // Holding18-11
+CardInDeck[6945] = new makeCardInDeck(6908, 59, 0); 

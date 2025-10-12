@@ -7284,3 +7284,19 @@ Card[6903] = new makeCard(6903 , 0);
 
   // Holding20-14
 Card[6904] = new makeCard(6904 , 0); 
+
+
+  // Holding18-40
+Card[6905] = new makeCard(6905 , 0); 
+
+
+  // Holding18-32
+Card[6906] = new makeCard(6906 , 0); 
+
+
+  // Holding18-15
+Card[6907] = new makeCard(6907 , 0); 
+
+
+  // Holding18-11
+Card[6908] = new makeCard(6908 , 0); 

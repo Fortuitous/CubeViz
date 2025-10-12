@@ -7325,3 +7325,23 @@ CubePosition[6982] = new makeCubePosition("---BCbD-C---bC----bcbbb---:1:1:1:00:1
   // Holding20-14
 CubePosition[6983] = new makeCubePosition("---BCbD-C---bC----acbcb---:0:0:1:00:0:0:0:0:10", 0, 0, 0, .6418, .6421, 0); 
 CubePosition[6984] = new makeCubePosition("---BCbD-C---bC----acbcb---:1:1:1:00:1:0:0:0:10", 0, 0, 1, .6764, .6421, 0); 
+
+
+  // Holding18-40
+CubePosition[6985] = new makeCubePosition("---ABCCbC---cCa-abbbb-----:0:0:1:00:0:0:0:0:10", 0, 0, 0, .9163, 1.0017, 0); 
+CubePosition[6986] = new makeCubePosition("---ABCCbC---cCa-abbbb-----:1:1:1:00:1:0:0:0:10", 0, 0, 1, .9176, 1.0018, 0); 
+
+
+  // Holding18-32
+CubePosition[6987] = new makeCubePosition("---ABCCbC---cCa-a-bbbb----:0:0:1:00:0:0:0:0:10", 0, 0, 0, .8289, .9151, 0); 
+CubePosition[6988] = new makeCubePosition("---ABCCbC---cCa-a-bbbb----:1:1:1:00:1:0:0:0:10", 0, 0, 1, .8302, .9151, 0); 
+
+
+  // Holding18-15
+CubePosition[6989] = new makeCubePosition("---ABCCbC---bC---abcbb-a--:0:0:1:00:0:0:0:0:10", 0, 0, 0, .6012, .6325, 0); 
+CubePosition[6990] = new makeCubePosition("---ABCCbC---bC---abcbb-a--:1:1:1:00:1:0:0:0:10", 0, 0, 1, .6337, .6325, 0); 
+
+
+  // Holding18-11
+CubePosition[6991] = new makeCubePosition("---ABCCbC---bC---aacbbaa--:0:0:1:00:0:0:0:0:10", 0, 0, 0, .5167, .5154, 0); 
+CubePosition[6992] = new makeCubePosition("---ABCCbC---bC---aacbbaa--:1:1:1:00:1:0:0:0:10", 0, 0, 1, .5865, .5154, 0); 

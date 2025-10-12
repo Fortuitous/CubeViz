@@ -26183,3 +26183,19 @@ Outcome[0][6981] = new makeOutcome(72.257, 1.920, 0.033, 27.743, 1.232, 0.018);
 
   // Holding20-14
 Outcome[0][6983] = new makeOutcome(70.535, 1.681, 0.044, 29.465, 1.178, 0.017); 
+
+
+  // Holding18-40
+Outcome[0][6985] = new makeOutcome(77.651, 4.269, 0.073, 22.349, 1.738, 0.022); 
+
+
+  // Holding18-32
+Outcome[0][6987] = new makeOutcome(76.306, 2.947, 0.042, 23.694, 1.592, 0.021); 
+
+
+  // Holding18-15
+Outcome[0][6989] = new makeOutcome(70.604, 1.690, 0.029, 29.396, 1.271, 0.020); 
+
+
+  // Holding18-11
+Outcome[0][6991] = new makeOutcome(68.178, 1.176, 0.016, 31.822, 1.058, 0.007); 
